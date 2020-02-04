@@ -1,8 +1,10 @@
-# Wikipedia Attack Classificatier
+# Machine Learning Sentiment Analysis
+
+## Wikipedia Attack Classifier
 
 - Nathaniel Haddad nhaddad2112@gmail.com
 
-## Abstract:
+## Overview:
 This project represents a series of machine learning models used to identify attacks on users on Wikipedia using natural language processing. Using Scikit-learn and other packages, I built several classifiers that were able to predict whether a comment was an attack or not with a high rate of accuracy.
 
 ## Methodologies:
