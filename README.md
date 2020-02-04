@@ -1,4 +1,4 @@
-# Machine Learning: Wikipedia Attack Classification
+# Wikipedia Attack Classificatier
 
 - Nathaniel Haddad nhaddad2112@gmail.com
 
