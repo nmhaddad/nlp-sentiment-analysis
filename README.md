@@ -23,7 +23,7 @@ run:
 ## Overview:
 This project represents a series of machine learning models used to identify attacks on users on Wikipedia using natural language processing. Using Scikit-learn and other packages, I built several classifiers that were able to predict whether a comment was an attack or not with a high rate of accuracy.
 
-![alt text](media/home.png "Home page")
+![alt text](media/home.png?style=centerme "Home page")
 
 ## Methodologies:
 **Data Cleaning**
@@ -58,7 +58,7 @@ My accuracy increased ~1.5-2.0 percentage points after hyperparameter tuning.
 
 ## Results
 
-![alt text](media/result_good.png "Results page")
+![alt text](media/result_good.png?style=centerme "Results page")
 
 For my first implementation, I chose to use the existing `LogisticRegression` machine learning model provided by the strawman code. Using the existing `pipeline`, I made alterations to the code: I combined validation and training sets to create a new training set with more instances that could then be used for validation using Sci-kit learn functions. One of the first functions I tried was `GridSearchCV`. Using this function took a very long time to train. With that in mind, I was careful to read the documentation for all of the implemented models to see what parameters really needed to be passed into `GridSearchCV`.
 
@@ -68,7 +68,7 @@ For my three new machine learning models, I tested `MLPClassifier`, `Multinomial
 
 I used a `get_metrics function` to keep track of all of my metrics for each experiment. As the project required, I implemented a confusion matrix, precision, recall, f-score, and ROC AUC. From these metrics I was able to learn more about the accuracy of my predictions for each of the classes, attack == 1 and attack == 0. I thought it was great to see that some models more accurately predict positive classes than negative classes and vice versa.
 
-![alt text](media/result_bad.png "Results page")
+![alt text](media/result_bad.png?style=centerme "Results page")
 
 My final result metrics are as follows:
 
