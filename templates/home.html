@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Comment Predictor</title>
+        <meta charset="UTF-8">
+        <!-- mobile first formatting -->
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1">
+        <title>Login</title>
+        <!-- bootstrap plugin -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+              rel="stylesheet"/>
+        <!-- fontawesome cdn -->
+        <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
+        <!-- stylesheet -->
+<!--        <link href="/css/styles.css"-->
+<!--              rel="stylesheet"/>-->
+    </head>
+    <body>
+        <div class="container-fluid">
+
+            <h1 class="title" align="center">Comment Sentiment Analysis Tool</h1>
+
+            <br>
+
+            <p></p>
+
+            <form action="{{url_for('predict')}}" method="POST">
+
+                <!-- Sepal length -->
+                <div class="form-group row">
+                    <label for="user-input" class="col-sm-2 col-form-label">
+                        User Comment
+                    </label>
+                    <div class="col-sm-10">
+                        <input type="text"
+                               step=".01"
+                               required
+                               class="form-control"
+                               id="user-input"
+                               name="user-input"
+                               value="This is a good comment. Have a great day!"
+                               title="Enter a comment">
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                        <input type="submit"
+                               value="Submit"
+                               class="form-control btn btn-block btn-primary">
+                </div>
+
+            </form>
+        </div>
+
+    </body>
+</html>

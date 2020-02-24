@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Comment Predictor</title>
+        <meta charset="UTF-8">
+        <!-- mobile first formatting -->
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1">
+        <title>Login</title>
+        <!-- bootstrap plugin -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+              rel="stylesheet"/>
+        <!-- fontawesome cdn -->
+        <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
+        <!-- stylesheet -->
+<!--        <link href="/css/styles.css"-->
+<!--              rel="stylesheet"/>-->
+        <style>
+            img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid center">
+            <h1 align="center" class="title">Comment Sentiment Analysis Tool</h1>
+
+            <div>
+                {% if prediction == 0 %}
+                <h2 class="text-success"
+                    align="center">
+                    Predicted: Good Comment
+                    <div>
+                        <br>
+                        <i class="fas fa-thumbs-up fa-7x"></i>
+
+                    </div>
+                    <br>
+                    You said something nice!
+                </h2>
+                {% elif prediction == 1 %}
+                <h2 class="text-danger"
+                    align="center">
+                    Predicted: Bad Comment
+                    <div>
+                        <br>
+                        <i class="fas fa-thumbs-down fa-7x"></i>
+                    </div>
+                    <br>
+                    You said something not so nice!
+                </h2>
+                {% endif %}
+            </div>
+
+            <br>
+            <div>
+                <a class="btn btn-block btn-primary" href="/v1/api">Make another Prediction</a>
+            </div>
+            <br>
+
+        </div>
+    </body>
+</html>
