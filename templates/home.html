@@ -12,9 +12,6 @@
               rel="stylesheet"/>
         <!-- fontawesome cdn -->
         <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
-        <!-- stylesheet -->
-<!--        <link href="/css/styles.css"-->
-<!--              rel="stylesheet"/>-->
     </head>
     <body>
         <div class="container-fluid">
@@ -22,12 +19,8 @@
             <h1 class="title" align="center">Comment Sentiment Analysis Tool</h1>
 
             <br>
-
-            <p></p>
-
+     
             <form action="{{url_for('predict')}}" method="POST">
-
-                <!-- Sepal length -->
                 <div class="form-group row">
                     <label for="user-input" class="col-sm-2 col-form-label">
                         User Comment
@@ -43,14 +36,11 @@
                                title="Enter a comment">
                     </div>
                 </div>
-
-
                 <div class="form-group">
                         <input type="submit"
                                value="Submit"
                                class="form-control btn btn-block btn-primary">
                 </div>
-
             </form>
         </div>
 
