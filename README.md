@@ -26,9 +26,8 @@ This project represents a series of machine learning models used to identify att
 <br>
 
 <div align="center">
-     <img align="center" src="media/home.png">
-
-    <img src="media/result_good.png" width="425"/> <img src="media/result_bad.png" width="425"/> 
+   <img align="center" src="media/home.png">
+   <img src="media/result_good.png" width="425"/> <img src="media/result_bad.png" width="425"/> 
 </div>
 
 ## Notes
