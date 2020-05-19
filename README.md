@@ -24,13 +24,8 @@ run:
 ## Overview
 This project represents a series of machine learning models used to identify attacks on users on Wikipedia using natural language processing. Using Scikit-learn and other packages, I built several classifiers that were able to predict whether a comment was an attack or not with a high rate of accuracy.
 
-<div align="center">
-    <img align="center" src="media/result_good.png">
-</div>
+![](media/result_good.png) | ![](media/result_bad.png)
 
-<div align="center">
-    <img src="media/result_bad.png">
-</div>
 
 
 
