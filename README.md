@@ -1,4 +1,6 @@
-# Social Media Comment Sentiment Analysis REST API
+# Understanding User Comments via Sentiment Analysis
+
+## Includes analysis of large corpus of positive and negative user comments, data cleaning, model selection, and deployment to a Flask REST API
 
 - Nathaniel Haddad haddad.na@northeastern.edu
 - Northeastern University
@@ -8,9 +10,11 @@
 
 ## Install
 packages:
-- `pip install pickle-mixin`
-- `pip install -U scikit-learn`
-- `pip install Flask`
+- `pip3 install pickle-mixin`
+- `pip3 install -U scikit-learn`
+- `pip3 install Flask`
+- `pip3 install nltk`
+- `pip3 install pandas`
 
 run:
 - train a model: (from the root folder) `python comment_clf_model.py`
