@@ -1,41 +1,36 @@
 from sklearn.linear_model import LogisticRegressionCV
 from sklearn.metrics import roc_auc_score
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.pipeline import Pipeline
+from sklearn.pipeline import Pipeline, FeatureUnion
 from sklearn.externals import joblib
-from sklearn.pipeline import FeatureUnion
 import pandas as pd
 import urllib
 
-"""
-function: get_metrics
-params: clf, a function
-returns: nothing
-does: prints out confusion matrix, precision, recall, f-score, and ROC AUC
-"""
-def get_metrics(clf, test_comments):
-  y_pred = clf.predict(test_comments['comment'])
-  auc = roc_auc_score(test_comments['attack'], clf.predict_proba(
+def get_metrics(clf, test_comments) -> None:
+    """
+    function: get_metrics
+    params: clf, a function
+    returns: nothing
+    does: prints out confusion matrix, precision, recall, f-score, and ROC AUC
+    """
+    y_pred = clf.predict(test_comments['comment'])
+    auc = roc_auc_score(test_comments['attack'], clf.predict_proba(
       test_comments['comment'])[:,1])
-  print('Test ROC AUC: %.5f' %auc)
+    print('Test ROC AUC: %.5f' %auc)
 
-"""
-function: download_file
-params: url, a string; fname, a string
-returns: nothing
-does: downloads a given file to the current directory
-"""
-def download_file(url, fname):
+def download_file(url: str, fname: str) -> None:
+    """
+    function: download_file
+    params: url, a string; fname, a string
+    returns: nothing
+    does: downloads a given file to the current directory
+    """
     urllib.request.urlretrieve(url, fname)
 
-
 def main():
-
     # download annotated comments and annotations
     ANNOTATED_COMMENTS_URL = 'https://ndownloader.figshare.com/files/7554634'
     ANNOTATIONS_URL = 'https://ndownloader.figshare.com/files/7554637'
-
-
 
     download_file(ANNOTATED_COMMENTS_URL, 'attack_annotated_comments.tsv')
     download_file(ANNOTATIONS_URL, 'attack_annotations.tsv')

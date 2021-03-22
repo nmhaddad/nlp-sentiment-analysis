@@ -9,18 +9,15 @@ def home():
 
 @app.route('/v1/api/predict', methods = ['POST'])
 def predict():
-
 	clf = joblib.load('models/trained_model.pkl')
-
 	if request.method == 'POST':
 		data = str(request.form['user-input'])
 		print("GOT")
 		print(data)
 		new_pred = clf.predict([data])
-
 		print('\n***OUTPUT***\n')
 		print(new_pred)
-	return render_template('result.html', prediction=new_pred)
+	return render_template('result.html', prediction = new_pred)
 
 if __name__ == '__main__':
 	app.run(debug = True)
