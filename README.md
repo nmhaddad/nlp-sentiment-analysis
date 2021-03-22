@@ -6,11 +6,14 @@
 - Northeastern University
 - Disclosure: this is a academic project
 
+Technologies: TensorFlow, Sklearn, NLTK, Pandas, Flask, Python
+
 ---
 
 ## Install
 packages:
 - `pip3 install pickle-mixin`
+- `pip3 install tensorflow`
 - `pip3 install -U scikit-learn`
 - `pip3 install Flask`
 - `pip3 install nltk`
