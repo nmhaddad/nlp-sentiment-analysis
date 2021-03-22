@@ -1,6 +1,6 @@
 # Understanding User Comments via Sentiment Analysis
 
-## Includes analysis of large corpus of positive and negative user comments, data cleaning, model selection, and deployment to a Flask REST API
+### *Includes analysis of large corpus of positive and negative user comments, data cleaning, model selection, and deployment to a Flask REST API*
 
 - Nathaniel Haddad haddad.na@northeastern.edu
 - Northeastern University
